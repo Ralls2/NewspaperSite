@@ -1,0 +1,146 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #75d58da0;
+}
+
+nav {
+    display:flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
+
+.article-header {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 10px;
+    padding: 50px;
+    background-color: #75d58d2a;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #75d58d2a;
+}
+ul {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.article-content {
+    display: flex;
+    flex-direction: row; /* Change flex-direction to row */
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+
+}
+.main-article-content {
+    flex-grow: 1;
+    width: 70%;
+}
+.sidebar {
+    width: 30%;
+    margin-right: 20px;
+}
+.advertisement {
+    overflow: hidden;
+    border: 1px solid #000;
+    text-align: center;
+    background-color: #75d58d7c;
+}
+
+.photo-gallery {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #75d58d2a
+}
+.photo img {
+    width: 100%;
+    height: auto;
+}
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #75d58d2a;
+}
+button {
+    padding: 1%;
+    width: 200px;
+    font-size: 25px;
+    background-color: #75d58d7c;
+}
+.hamburger {
+    font-size: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h3 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+p {
+    font-size: 25px;
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #75d58da0;
+}

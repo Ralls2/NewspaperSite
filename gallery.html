@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="CSS Files/style.css">
+</head>
+<body>
+    <header>
+        <h1>ChatGPT's Local News</h1>
+        <nav>
+            <div class="hamburger">☰</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="article.html">Articles</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click',function(){
+            document.querySelector('nav ul').classList.toggle('active')
+        });
+    </script>
+    <main class="photo-gallery">
+        <div class="photo"><img src=Images/ChatGPT_logo.svg.png alt="ChatGPT Logo"></div>
+        <div class="photo"><img src=Images/cupcakes.jpg alt="Cupcakes"></div>
+        <div class="photo"><img src=images/dailynews.webp alt="Newspaper that says daily news"></div>
+        <div class="photo"><img src=Images/distractable.jpg alt="Distractable Podcast Cover Art"></div>
+        <div class="photo"><img src=Images/kittens.jpg alt="Two Kittens Laying Together"></div>
+        <div class="photo"><img src=Images/newspapers.jpg alt="Stack of overlapping newspapers"></div>
+        <div class="photo"><img src=Images/uiux.png alt="A photo dipicting UI and UX Design"></div>
+    </main>
+    <div class="gallery-controls">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+    </div>
+
+    <footer>
+        <p>Contact us at ralls2@students.kennesaw.edu</p>
+    </footer>
+</body>
+</html>
